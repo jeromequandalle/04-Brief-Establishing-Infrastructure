@@ -15,7 +15,6 @@ ssh_host_master_port = "8022"
 name_cluster_node1 = "srvk8snd1"
 interfaces_clusters_ip0_node1 = "ip=172.42.10.81/24,gw=172.42.10.1"
 interfaces_clusters_ip1_node1 = "ip=172.42.20.81/24"
-
 id_node1 = "8122"
 ssh_host_node1_port = "8122"
 
