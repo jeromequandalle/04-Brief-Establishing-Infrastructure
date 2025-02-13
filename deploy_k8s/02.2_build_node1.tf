@@ -22,12 +22,7 @@ resource "null_resource" "create_node1" {
 	 destination = "/tmp/k8s.conf"
     }
 
- provisioner "file" {
-	 source	=	"conf/cri-dockerd_0.3.15.3-0.debian-bookworm_amd64.deb"
-	 destination = "/tmp/cri-dockerd_0.3.15.3-0.debian-bookworm_amd64.deb"
-    }
-
-  # Provisioner pour exécuter des commandes à distance
+# Provisioner pour exécuter des commandes à distance
   provisioner "remote-exec" {
     inline = [
       "cp /tmp/create_node.sh .",
